@@ -13,11 +13,7 @@ public class Staff {
 
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
-    private int staffId;
-    private String name;
-    private String role;
-    private String email;
-    private int phone;
-
-
+    private int staff_id;
+    private String staff_name;
+    private String staff_role;
 }

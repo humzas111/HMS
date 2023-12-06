@@ -14,16 +14,16 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "room_id")
-    private int roomId;
+    private int room_id;
 
     @Column(name = "room_type")
-    private String roomType;
+    private String room_Type;
 
     @Column(name = "room_rate")
-    private int rate;
+    private int room_rate;
 
     @Column(name = "room_status")
-    private String status;
+    private String room_status;
 
     public Room() {
     }

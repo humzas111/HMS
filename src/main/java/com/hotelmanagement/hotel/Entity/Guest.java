@@ -16,18 +16,18 @@ public class Guest {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int guestId;
+    @Column(name = "guest_id")
+    private int guest_id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "guest_name")
+    private String guest_name;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "guest_email")
+    private String guest_email;
 
-    @Column(name = "phone")
-    private String phone;
+    @Column(name = "guest_phone")
+    private String guest_phone;
 
-    @Column(name = "address")
-    private String address;
+    @Column(name = "guest_address")
+    private String guest_address;
 }

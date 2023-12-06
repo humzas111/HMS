@@ -15,23 +15,19 @@ import java.sql.Timestamp;
 @Table(name = "bill")
 public class Bill {
 
-
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id") //id
-    private int billId;
+    @Column(name = "bill_id") //id
+    private int bill_Id;
 
-    @Column(name = "total_amount")
-    private int price;
+    @Column(name = "bill_amount")
+    private int bill_amount;
 
-    @ManyToOne
-    @JoinColumn(name = "guest_id", nullable = false)
-    private Guest guest;
+    @Column(name = "bill_status")
+    private String bill_status;
 
     @OneToOne
-    @JoinColumn(name = "reservation_id", nullable = false)
+    @JoinColumn(name = "res_id", nullable = false)
     private Reservation reservation;
 
 }

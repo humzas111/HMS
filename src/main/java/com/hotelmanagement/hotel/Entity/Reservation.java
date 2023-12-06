@@ -25,6 +25,9 @@ public class Reservation {
     @Column(name = "check_out_date")
     private Timestamp checkOut;
 
+    @Column(name = "")
+    private String status;
+
     @ManyToOne
     @JoinColumn(name = "guest_id", nullable = false)
     private Guest guest;
